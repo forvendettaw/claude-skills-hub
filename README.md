@@ -31,6 +31,44 @@
 
 ---
 
+## 🔍 双向检索指南
+
+本项目支持**双向检索**，满足不同查找需求：
+
+### 检索方式 1：技能 → 使用场景（正向）
+
+**我想学某个技能，想了解它的使用场景**
+
+| 技能 | 查看 |
+|------|------|
+| 想学 frontend-design | [开发工具分类](./skills/02-development/) |
+| 想学 n8n-skills | [自动化与工作流](./skills/12-automation/) |
+| 想学 copywriting | [沟通与写作](./skills/05-communication/) |
+
+### 检索方式 2：使用场景 → 技能（反向）
+
+**我有一个使用场景，想知道需要哪些技能**
+
+| 使用场景 | 需要的技能 |
+|----------|------------|
+| 开发一个 Web 应用 | frontend-design, playwright, docker-expert, mcp-builder |
+| 构建 AI 客服系统 | knowledge-management, n8n-skills, whatsapp-automation |
+| 自动化会议流程 | meeting-notes, Todoist Automation, gmail-automation |
+| 构建知识库 | knowledge-management, tapestry, article-extractor |
+| 做内容营销 | copywriting, seo-audit, twitter-automation |
+
+### 检索方式 3：案例驱动
+
+**我想参考真实案例，看看别人怎么做**
+
+| 案例 | 关联技能 |
+|------|----------|
+| [隔夜迷你应用构建器](./usecases/02-development/overnight-mini-app-builder.md) | frontend-design, playwright, docker |
+| [多渠道 AI 客服](./usecases/01-productivity/multi-channel-customer-service.md) | knowledge-management, n8n-skills |
+| [第二大脑](./usecases/01-productivity/second-brain.md) | tapestry, knowledge-management |
+
+---
+
 ## 📁 目录结构
 
 ```

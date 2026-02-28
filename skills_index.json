@@ -1,135 +1,356 @@
 {
-  "version": "2.0.0",
+  "version": "3.0.0",
   "lastUpdated": "2025-03-01",
+  "description": "Claude Code Skills 与使用案例检索索引 - 支持双向检索",
   "totalSkills": 500,
-  "categories": [
-    {
-      "id": "01-document",
-      "name": "文档处理",
-      "nameEn": "Document Processing",
-      "description": "Word、PDF、Excel、PPT 文档处理",
-      "skillCount": 10,
-      "subCategories": ["文字处理", "PDF处理", "表格处理", "演示文稿", "电子书制作"],
-      "useCases": ["合同文档批量处理", "会议记录整理", "数据报告生成"]
-    },
-    {
-      "id": "02-development",
-      "name": "开发工具",
-      "nameEn": "Development & Code Tools",
-      "description": "前端/后端/移动开发、测试、部署",
-      "skillCount": 100,
-      "subCategories": ["前端开发", "后端开发", "移动开发", "测试", "代码质量", "开发流程", "构建工具", "MCP扩展"],
-      "useCases": ["全栈React应用开发", "移动端Expo应用开发", "API开发与测试", "代码审查流程优化"]
-    },
-    {
-      "id": "03-data-analysis",
-      "name": "数据分析",
-      "nameEn": "Data & Analysis",
-      "description": "数据处理、可视化、数据库",
-      "skillCount": 30,
-      "subCategories": ["数据处理", "数据库操作", "数据可视化", "数据分析工具", "AI研究"],
-      "useCases": ["数据报表自动化", "用户行为分析", "数据库性能优化"]
-    },
-    {
-      "id": "04-business",
-      "name": "商业与营销",
-      "nameEn": "Business & Marketing",
-      "description": "营销、销售、竞争分析、品牌",
-      "skillCount": 30,
-      "subCategories": ["品牌与设计", "营销策略", "销售与客户", "电商与支付", "广告与推广", "用户转化"],
-      "useCases": ["新产品发布营销", "竞品分析", "销售线索获取", "转化率优化", "品牌建设"]
-    },
-    {
-      "id": "05-communication",
-      "name": "沟通与写作",
-      "nameEn": "Communication & Writing",
-      "description": "内容创作、翻译、会议纪要",
-      "skillCount": 20,
-      "subCategories": ["内容创作", "社交媒体", "会议与分析", "研究与学习", "SEO与内容优化"],
-      "useCases": ["博客文章创作", "社交媒体运营", "会议效率提升", "SEO优化", "头脑风暴与创意"]
-    },
-    {
-      "id": "06-creative",
-      "name": "创意与媒体",
-      "nameEn": "Creative & Media",
-      "description": "图像生成、视频、音频、设计",
-      "skillCount": 30,
-      "subCategories": ["图像生成", "视频制作", "音频处理", "设计工具", "社交媒体内容"],
-      "useCases": ["UI/UX设计", "视频内容创作", "品牌视觉设计", "社交媒体图片制作", "演示文稿制作"]
-    },
-    {
-      "id": "07-productivity",
-      "name": "生产力工具",
-      "nameEn": "Productivity & Organization",
-      "description": "效率工具、时间管理、自动化",
-      "skillCount": 20,
-      "subCategories": ["文件管理", "个人效率", "简历与求职", "知识管理"],
-      "useCases": ["简历优化求职", "文件整理自动化", "知识网络构建", "持续改进实践"]
-    },
-    {
-      "id": "08-collaboration",
-      "name": "协作与项目管理",
-      "nameEn": "Collaboration & Project Management",
-      "description": "团队协作、项目管理、代码审查",
-      "skillCount": 20,
-      "subCategories": ["Git操作", "项目管理", "代码审查", "团队协作", "文档协作"],
-      "useCases": ["团队代码审查流程", "项目管理集成", "Git工作流优化", "开发完成验证"]
-    },
-    {
-      "id": "09-security",
-      "name": "安全与系统",
-      "nameEn": "Security & Systems",
-      "description": "安全审计、取证、系统管理",
-      "skillCount": 20,
-      "subCategories": ["安全审计", "渗透测试", "安全工具", "系统管理"],
-      "useCases": ["Web应用渗透测试", "代码安全审计", "威胁检测", "数字取证调查"]
-    },
-    {
-      "id": "10-cloud-devops",
-      "name": "云服务与DevOps",
-      "nameEn": "Cloud & DevOps",
-      "description": "AWS、Azure、GCP、CI/CD",
-      "skillCount": 60,
-      "subCategories": ["AWS", "Azure", "GCP", "Vercel", "其他云服务", "DevOps", "监控"],
-      "useCases": ["云端Web应用部署", "Azure AI服务集成", "成本优化"]
-    },
-    {
-      "id": "11-ai-ml",
-      "name": "AI与机器学习",
-      "nameEn": "AI & Machine Learning",
-      "description": "LLM、Prompt Engineering、MCP",
-      "skillCount": 40,
-      "subCategories": ["提示工程", "MCP", "LLM集成", "浏览器AI", "自动化代理", "AI开发工具", "视频与图像AI"],
-      "useCases": ["构建AI代理系统", "提示词优化", "多代理协作", "AI视频内容创作"]
-    },
-    {
-      "id": "12-automation",
-      "name": "自动化与工作流",
-      "nameEn": "Automation & Workflows",
-      "description": "工作流自动化、API 集成",
-      "skillCount": 100,
-      "subCategories": ["自动化平台", "应用集成", "连接器", "自动化工具"],
-      "useCases": ["跨平台社交媒体管理", "CRM数据同步", "开发流程自动化", "电商订单处理", "自定义AI工作流"]
-    }
-  ],
-  "hotSkills": [
-    {"name": "find-skills", "installs": "356.6K", "source": "vercel-labs/skills"},
-    {"name": "vercel-react-best-practices", "installs": "177.2K", "source": "vercel-labs/agent-skills"},
-    {"name": "web-design-guidelines", "installs": "136.0K", "source": "vercel-labs/agent-skills"},
-    {"name": "remotion-best-practices", "installs": "117.2K", "source": "remotion-dev/skills"},
-    {"name": "frontend-design", "installs": "108.9K", "source": "anthropics/skills"},
-    {"name": "azure-ai", "installs": "88.5K", "source": "microsoft/github-copilot-for-azure"},
-    {"name": "mcp-builder", "installs": "high", "source": "ComposioHQ"},
-    {"name": "pdf", "installs": "high", "source": "anthropics/skills"},
-    {"name": "docx", "installs": "high", "source": "anthropics/skills"},
-    {"name": "pptx", "installs": "high", "source": "anthropics/skills"}
-  ],
+  "totalUseCases": 11,
+
+  "正向索引": {
+    "description": "从技能到使用场景的检索",
+    "categories": [
+      {
+        "id": "01-document",
+        "name": "文档处理",
+        "skillCount": 10,
+        "skills": ["docx", "pdf", "xlsx", "pptx", "markdown-to-epub"]
+      },
+      {
+        "id": "02-development",
+        "name": "开发工具",
+        "skillCount": 100,
+        "skills": ["frontend-design", "playwright", "test-driven-development", "mcp-builder", "skill-creator"]
+      },
+      {
+        "id": "03-data-analysis",
+        "name": "数据分析",
+        "skillCount": 30,
+        "skills": ["postgres", "csv-data-summarizer", "d3-visualization", "deep-research"]
+      },
+      {
+        "id": "04-business",
+        "name": "商业与营销",
+        "skillCount": 30,
+        "skills": ["brand-guidelines", "marketing-psychology", "competitive-ads-extractor", "launch-strategy"]
+      },
+      {
+        "id": "05-communication",
+        "name": "沟通与写作",
+        "skillCount": 20,
+        "skills": ["copywriting", "brainstorming", "seo-audit", "meeting-insights"]
+      },
+      {
+        "id": "06-creative",
+        "name": "创意与媒体",
+        "skillCount": 30,
+        "skills": ["canvas-design", "remotion-best-practices", "ai-image-generation", "ui-ux-pro-max"]
+      },
+      {
+        "id": "07-productivity",
+        "name": "生产力工具",
+        "skillCount": 20,
+        "skills": ["file-organizer", "kaizen", "tailored-resume", "tapestry"]
+      },
+      {
+        "id": "08-collaboration",
+        "name": "协作与项目管理",
+        "skillCount": 20,
+        "skills": ["git-pushing", "code-review-excellence", "google-workspace-skills", "notion-integration"]
+      },
+      {
+        "id": "09-security",
+        "name": "安全与系统",
+        "skillCount": 20,
+        "skills": ["ffuf-web-fuzzing", "computer-forensics", "threat-hunting"]
+      },
+      {
+        "id": "10-cloud-devops",
+        "name": "云服务与DevOps",
+        "skillCount": 60,
+        "skills": ["aws-skills", "azure-ai", "vercel-react-best-practices", "docker-expert"]
+      },
+      {
+        "id": "11-ai-ml",
+        "name": "AI与机器学习",
+        "skillCount": 40,
+        "skills": ["prompt-engineering", "mcp-builder", "browser-use", "ai-image-generation"]
+      },
+      {
+        "id": "12-automation",
+        "name": "自动化与工作流",
+        "skillCount": 100,
+        "skills": ["n8n-skills", "connect", "ai-automation-workflows"]
+      }
+    ]
+  },
+
+  "反向索引": {
+    "description": "从使用场景到技能的检索 - 按场景查找所需技能",
+    "scenarios": [
+      {
+        "id": "场景-01",
+        "name": "开发一个 Web 应用",
+        "description": "从设计到部署完整开发 Web 应用",
+        "skills": [
+          {"name": "frontend-design", "category": "前端开发", "reason": "应用界面设计"},
+          {"name": "vercel-react-best-practices", "category": "前端开发", "reason": "React 最佳实践"},
+          {"name": "web-artifacts-builder", "category": "前端开发", "reason": "构建前端组件"},
+          {"name": "playwright", "category": "测试", "reason": "E2E 测试"},
+          {"name": "test-driven-development", "category": "测试", "reason": "测试驱动开发"},
+          {"name": "docker-expert", "category": "部署", "reason": "容器化部署"},
+          {"name": "github-actions-templates", "category": "DevOps", "reason": "CI/CD 配置"},
+          {"name": "mcp-builder", "category": "扩展", "reason": "集成外部 API"}
+        ],
+        "useCases": ["隔夜迷你应用构建器", "游戏开发流水线"]
+      },
+      {
+        "id": "场景-02",
+        "name": "构建 AI 客服系统",
+        "description": "创建多渠道客服机器人",
+        "skills": [
+          {"name": "knowledge-management", "category": "知识管理", "reason": "构建知识库"},
+          {"name": "n8n-skills", "category": "自动化", "reason": "工作流编排"},
+          {"name": "whatsapp-automation", "category": "集成", "reason": "WhatsApp 渠道"},
+          {"name": "gmail-automation", "category": "集成", "reason": "邮件渠道"},
+          {"name": "slack-automation", "category": "集成", "reason": "Slack 通知"},
+          {"name": "tapestry", "category": "知识管理", "reason": "知识网络"}
+        ],
+        "useCases": ["多渠道 AI 客服平台"]
+      },
+      {
+        "id": "场景-03",
+        "name": "自动化会议流程",
+        "description": "自动记录会议并生成任务",
+        "skills": [
+          {"name": "meeting-notes", "category": "记录", "reason": "生成会议纪要"},
+          {"name": "Meeting Insights Analyzer", "category": "分析", "reason": "分析会议洞察"},
+          {"name": "Todoist Automation", "category": "集成", "reason": "创建 Todoist 任务"},
+          {"name": "Asana Automation", "category": "集成", "reason": "创建 Asana 任务"},
+          {"name": "Notion Automation", "category": "集成", "reason": "同步到 Notion"},
+          {"name": "gmail-automation", "category": "通知", "reason": "发送会议摘要"}
+        ],
+        "useCases": ["会议记录与行动项"]
+      },
+      {
+        "id": "场景-04",
+        "name": "构建知识管理系统",
+        "description": "搭建 RAG 知识库",
+        "skills": [
+          {"name": "knowledge-management", "category": "知识管理", "reason": "知识管理"},
+          {"name": "tapestry", "category": "知识管理", "reason": "知识网络构建"},
+          {"name": "article-extractor", "category": "内容获取", "reason": "提取网页文章"},
+          {"name": "web-search", "category": "内容获取", "reason": "网络搜索"},
+          {"name": "deep-research", "category": "研究", "reason": "深度研究"}
+        ],
+        "useCases": ["知识库 RAG", "第二大脑"]
+      },
+      {
+        "id": "场景-05",
+        "name": "内容创作与发布",
+        "description": "批量创作和发布社交媒体内容",
+        "skills": [
+          {"name": "copywriting", "category": "内容创作", "reason": "文案撰写"},
+          {"name": "brainstorming", "category": "创意", "reason": "头脑风暴"},
+          {"name": "twitter-automation", "category": "发布", "reason": "Twitter 发布"},
+          {"name": "seo-audit", "category": "优化", "reason": "SEO 优化"},
+          {"name": "content-strategy", "category": "策略", "reason": "内容策略"},
+          {"name": "social-content", "category": "内容创作", "reason": "社交内容"}
+        ],
+        "useCases": ["多源科技新闻摘要"]
+      },
+      {
+        "id": "场景-06",
+        "name": "个人知识记忆",
+        "description": "构建第二大脑记忆系统",
+        "skills": [
+          {"name": "tapestry", "category": "知识网络", "reason": "文档互联"},
+          {"name": "remembering-conversations", "category": "记忆", "reason": "记住对话"},
+          {"name": "knowledge-management", "category": "知识管理", "reason": "知识整理"},
+          {"name": "semantic-memory-search", "category": "检索", "reason": "语义搜索"}
+        ],
+        "useCases": ["第二大脑"]
+      },
+      {
+        "id": "场景-07",
+        "name": "项目管理与协作",
+        "description": "去中心化团队协作",
+        "skills": [
+          {"name": "subagent-driven-development", "category": "代理", "reason": "子代理调度"},
+          {"name": "writing-plans", "category": "规划", "reason": "编写计划"},
+          {"name": "executing-plans", "category": "执行", "reason": "执行计划"},
+          {"name": "verification-before-completion", "category": "验证", "reason": "完成验证"},
+          {"name": "git-pushing", "category": "版本控制", "reason": "Git 操作"},
+          {"name": "google-workspace-skills", "category": "协作", "reason": "Google 集成"}
+        ],
+        "useCases": ["自主项目管理"]
+      },
+      {
+        "id": "场景-08",
+        "name": "数据报表与分析",
+        "description": "自动化数据分析与可视化",
+        "skills": [
+          {"name": "postgres", "category": "数据库", "reason": "数据查询"},
+          {"name": "csv-data-summarizer", "category": "分析", "reason": "CSV 分析"},
+          {"name": "d3-visualization", "category": "可视化", "reason": "图表生成"},
+          {"name": "analytics-tracking", "category": "追踪", "reason": "数据追踪"},
+          {"name": "deep-research", "category": "研究", "reason": "深度分析"}
+        ],
+        "useCases": ["动态仪表板"]
+      },
+      {
+        "id": "场景-09",
+        "name": "社交媒体监控",
+        "description": "追踪社交媒体热点",
+        "skills": [
+          {"name": "reddit-fetch", "category": "获取", "reason": "Reddit 内容"},
+          {"name": "web-search", "category": "获取", "reason": "网络搜索"},
+          {"name": "article-extractor", "category": "获取", "reason": "文章提取"},
+          {"name": "twitter-automation", "category": "Twitter", "reason": "Twitter 分析"},
+          {"name": "copywriting", "category": "创作", "reason": "内容总结"}
+        ],
+        "useCases": ["每日 Reddit 摘要", "X 账户分析", "多源科技新闻"]
+      },
+      {
+        "id": "场景-10",
+        "name": "API 自动化集成",
+        "description": "通过 webhook 实现工作流自动化",
+        "skills": [
+          {"name": "n8n-skills", "category": "自动化平台", "reason": "工作流编排"},
+          {"name": "webhook-handler", "category": "触发", "reason": "Webhook 处理"},
+          {"name": "api-integration", "category": "集成", "reason": "API 连接"},
+          {"name": "connect", "category": "集成", "reason": "应用连接"}
+        ],
+        "useCases": ["n8n 工作流编排"]
+      },
+      {
+        "id": "场景-11",
+        "name": "市场调研与分析",
+        "description": "竞品分析和市场研究",
+        "skills": [
+          {"name": "competitive-ads-extractor", "category": "竞品", "reason": "广告分析"},
+          {"name": "competitor-alternatives", "category": "竞品", "reason": "替代方案"},
+          {"name": "deep-research", "category": "研究", "reason": "深度研究"},
+          {"name": "lead-research-assistant", "category": "销售", "reason": "潜在客户"}
+        ],
+        "useCases": ["市场研究产品工厂"]
+      }
+    ]
+  },
+
+  "使用案例索引": {
+    "description": "从使用案例查找关联技能",
+    "useCases": [
+      {
+        "id": "uc-01",
+        "name": "自主项目管理",
+        "category": "效率工具",
+        "skills": ["subagent-driven-development", "writing-plans", "executing-plans", "verification-before-completion", "git-pushing"]
+      },
+      {
+        "id": "uc-02",
+        "name": "每日 Reddit 摘要",
+        "category": "社交媒体",
+        "skills": ["reddit-fetch", "web-search", "article-extractor"]
+      },
+      {
+        "id": "uc-03",
+        "name": "多渠道 AI 客服",
+        "category": "效率工具",
+        "skills": ["knowledge-management", "n8n-skills", "whatsapp-automation", "gmail-automation", "slack-automation"]
+      },
+      {
+        "id": "uc-04",
+        "name": "会议记录与行动项",
+        "category": "效率工具",
+        "skills": ["meeting-notes", "Meeting Insights Analyzer", "Todoist Automation", "Asana Automation", "gmail-automation"]
+      },
+      {
+        "id": "uc-05",
+        "name": "第二大脑",
+        "category": "效率工具",
+        "skills": ["tapestry", "remembering-conversations", "knowledge-management", "semantic-memory-search"]
+      },
+      {
+        "id": "uc-06",
+        "name": "隔夜迷你应用构建器",
+        "category": "开发",
+        "skills": ["frontend-design", "web-artifacts-builder", "playwright", "docker-expert", "test-driven-development"]
+      },
+      {
+        "id": "uc-07",
+        "name": "游戏开发流水线",
+        "category": "开发",
+        "skills": ["frontend-design", "python-executor", "test-driven-development", "docker-expert", "analytics-tracking"]
+      },
+      {
+        "id": "uc-08",
+        "name": "知识库 RAG",
+        "category": "研究",
+        "skills": ["knowledge-management", "deep-research", "article-extractor", "web-search"]
+      },
+      {
+        "id": "uc-09",
+        "name": "Polymarket 自动交易",
+        "category": "商业",
+        "skills": ["analytics-tracking", "deep-research", "ai-automation-workflows"]
+      },
+      {
+        "id": "uc-10",
+        "name": "n8n 工作流编排",
+        "category": "自动化",
+        "skills": ["n8n-skills", "webhook-handler", "api-integration"]
+      },
+      {
+        "id": "uc-11",
+        "name": "多源科技新闻摘要",
+        "category": "社交媒体",
+        "skills": ["web-search", "article-extractor", "deep-research", "copywriting"]
+      }
+    ]
+  },
+
+  "快速检索": {
+    "description": "常用场景的技能组合推荐",
+    "combinations": [
+      {
+        "scenario": "我想开发一个网站",
+        "skills": ["frontend-design", "vercel-react-best-practices", "playwright", "docker-expert"]
+      },
+      {
+        "scenario": "我想做数据分析",
+        "skills": ["postgres", "csv-data-summarizer", "d3-visualization"]
+      },
+      {
+        "scenario": "我想做自动化工作流",
+        "skills": ["n8n-skills", "connect", "webhook-handler"]
+      },
+      {
+        "scenario": "我想做 AI 应用",
+        "skills": ["prompt-engineering", "mcp-builder", "browser-use"]
+      },
+      {
+        "scenario": "我想做内容营销",
+        "skills": ["copywriting", "seo-audit", "twitter-automation", "content-strategy"]
+      },
+      {
+        "scenario": "我想做客户支持",
+        "skills": ["knowledge-management", "gmail-automation", "slack-automation", "n8n-skills"]
+      },
+      {
+        "scenario": "我想构建知识库",
+        "skills": ["knowledge-management", "tapestry", "article-extractor", "deep-research"]
+      },
+      {
+        "scenario": "我想做项目管理",
+        "skills": ["subagent-driven-development", "writing-plans", "google-workspace-skills"]
+      }
+    ]
+  },
+
   "sources": [
     {
       "name": "anthropics/skills",
       "type": "official",
-      "url": "https://github.com/anthropics/skills",
-      "skillCount": 16
+      "url": "https://github.com/anthropics/skills"
     },
     {
       "name": "ComposioHQ/awesome-claude-skills",
@@ -138,26 +359,16 @@
       "url": "https://github.com/ComposioHQ/awesome-claude-skills"
     },
     {
-      "name": "travisvn/awesome-claude-skills",
-      "type": "community",
-      "stars": 7900,
-      "url": "https://github.com/travisvn/awesome-claude-skills"
+      "name": "hesamsheikh/awesome-openclaw-usecases",
+      "type": "useCases",
+      "stars": 12900,
+      "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases"
     },
     {
       "name": "skills.sh",
       "type": "marketplace",
       "skills": 79144,
       "url": "https://skills.sh"
-    },
-    {
-      "name": "vercel-labs",
-      "type": "official",
-      "url": "https://github.com/vercel-labs"
-    },
-    {
-      "name": "microsoft",
-      "type": "official",
-      "url": "https://github.com/microsoft"
     }
   ]
 }
