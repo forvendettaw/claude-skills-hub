@@ -1,376 +1,106 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "lastUpdated": "2025-03-01",
-  "totalSkills": 1000,
+  "totalSkills": 500,
   "categories": [
     {
       "id": "01-document",
       "name": "文档处理",
       "nameEn": "Document Processing",
       "description": "Word、PDF、Excel、PPT 文档处理",
-      "skillCount": 50,
-      "skills": [
-        {
-          "name": "docx",
-          "nameCn": "Word文档处理",
-          "description": "创建、编辑、分析 Word 文档，支持修订追踪、评论和格式设置",
-          "source": "anthropics/skills"
-        },
-        {
-          "name": "pdf",
-          "nameCn": "PDF处理",
-          "description": "提取文本、表格、元数据，合并和标注 PDF",
-          "source": "anthropics/skills"
-        },
-        {
-          "name": "xlsx",
-          "nameCn": "Excel表格处理",
-          "description": "电子表格操作：公式、图表、数据转换",
-          "source": "anthropics/skills"
-        },
-        {
-          "name": "pptx",
-          "nameCn": "PPT演示文稿",
-          "description": "读取、生成和调整幻灯片、布局、模板",
-          "source": "anthropics/skills"
-        },
-        {
-          "name": "markdown-to-epub",
-          "nameCn": "Markdown转EPUB",
-          "description": "将 Markdown 文档和聊天记录转换为专业 EPUB 电子书",
-          "source": "ComposioHQ"
-        }
-      ]
+      "skillCount": 10,
+      "subCategories": ["文字处理", "PDF处理", "表格处理", "演示文稿", "电子书制作"],
+      "useCases": ["合同文档批量处理", "会议记录整理", "数据报告生成"]
     },
     {
       "id": "02-development",
       "name": "开发工具",
       "nameEn": "Development & Code Tools",
-      "description": "代码开发、测试、调试、部署",
-      "skillCount": 200,
-      "skills": [
-        {
-          "name": "frontend-design",
-          "nameCn": "前端设计",
-          "description": "指导 Claude 做出大胆设计决策，适合 React & Tailwind",
-          "source": "anthropics/skills"
-        },
-        {
-          "name": "web-artifacts-builder",
-          "nameCn": "Web产物构建器",
-          "description": "使用 React、Tailwind CSS、shadcn/ui 创建复杂 HTML 组件",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "playwright",
-          "nameCn": "Playwright测试",
-          "description": "使用 Playwright 进行 Web 应用测试验证",
-          "source": "community"
-        },
-        {
-          "name": "test-driven-development",
-          "nameCn": "测试驱动开发",
-          "description": "实现功能或修复前先编写测试",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "mcp-builder",
-          "nameCn": "MCP服务器构建",
-          "description": "指导创建高质量的 MCP 服务器",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "skill-creator",
-          "nameCn": "技能创建器",
-          "description": "创建有效 Claude Skills 的指南",
-          "source": "anthropics/skills"
-        }
-      ]
+      "description": "前端/后端/移动开发、测试、部署",
+      "skillCount": 100,
+      "subCategories": ["前端开发", "后端开发", "移动开发", "测试", "代码质量", "开发流程", "构建工具", "MCP扩展"],
+      "useCases": ["全栈React应用开发", "移动端Expo应用开发", "API开发与测试", "代码审查流程优化"]
     },
     {
       "id": "03-data-analysis",
       "name": "数据分析",
       "nameEn": "Data & Analysis",
       "description": "数据处理、可视化、数据库",
-      "skillCount": 80,
-      "skills": [
-        {
-          "name": "csv-data-summarizer",
-          "nameCn": "CSV数据汇总",
-          "description": "自动分析 CSV 文件并生成可视化洞察",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "postgres",
-          "nameCn": "PostgreSQL查询",
-          "description": "对 PostgreSQL 数据库执行安全只读 SQL 查询",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "d3-visualization",
-          "nameCn": "D3.js可视化",
-          "description": "生成 D3 图表和交互式数据可视化",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "deep-research",
-          "nameCn": "深度研究",
-          "description": "使用 Gemini Deep Research Agent 执行多步研究",
-          "source": "ComposioHQ"
-        }
-      ]
+      "skillCount": 30,
+      "subCategories": ["数据处理", "数据库操作", "数据可视化", "数据分析工具", "AI研究"],
+      "useCases": ["数据报表自动化", "用户行为分析", "数据库性能优化"]
     },
     {
       "id": "04-business",
       "name": "商业与营销",
       "nameEn": "Business & Marketing",
       "description": "营销、销售、竞争分析、品牌",
-      "skillCount": 60,
-      "skills": [
-        {
-          "name": "brand-guidelines",
-          "nameCn": "品牌指南",
-          "description": "应用 Anthropic 官方品牌色彩和排版",
-          "source": "anthropics/skills"
-        },
-        {
-          "name": "marketing-psychology",
-          "nameCn": "营销心理学",
-          "description": "营销心理学应用",
-          "source": "skills.sh"
-        },
-        {
-          "name": "lead-research-assistant",
-          "nameCn": "潜在客户研究",
-          "description": "识别和筛选潜在客户，提供 Outreach 策略",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "competitive-ads-extractor",
-          "nameCn": "竞品广告提取",
-          "description": "提取分析竞品广告以了解营销策略",
-          "source": "ComposioHQ"
-        }
-      ]
+      "skillCount": 30,
+      "subCategories": ["品牌与设计", "营销策略", "销售与客户", "电商与支付", "广告与推广", "用户转化"],
+      "useCases": ["新产品发布营销", "竞品分析", "销售线索获取", "转化率优化", "品牌建设"]
     },
     {
       "id": "05-communication",
       "name": "沟通与写作",
       "nameEn": "Communication & Writing",
       "description": "内容创作、翻译、会议纪要",
-      "skillCount": 70,
-      "skills": [
-        {
-          "name": "brainstorming",
-          "nameCn": "头脑风暴",
-          "description": "通过结构化提问将粗略想法转化为完整设计",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "copywriting",
-          "nameCn": "文案撰写",
-          "description": "专业文案撰写",
-          "source": "skills.sh"
-        },
-        {
-          "name": "seo-audit",
-          "nameCn": "SEO审计",
-          "description": "搜索引擎优化审计",
-          "source": "skills.sh"
-        },
-        {
-          "name": "article-extractor",
-          "nameCn": "文章提取",
-          "description": "从网页提取完整文章文本和元数据",
-          "source": "ComposioHQ"
-        }
-      ]
+      "skillCount": 20,
+      "subCategories": ["内容创作", "社交媒体", "会议与分析", "研究与学习", "SEO与内容优化"],
+      "useCases": ["博客文章创作", "社交媒体运营", "会议效率提升", "SEO优化", "头脑风暴与创意"]
     },
     {
       "id": "06-creative",
       "name": "创意与媒体",
       "nameEn": "Creative & Media",
       "description": "图像生成、视频、音频、设计",
-      "skillCount": 90,
-      "skills": [
-        {
-          "name": "canvas-design",
-          "nameCn": "Canvas设计",
-          "description": "使用设计理念创建视觉艺术（PNG/PDF）",
-          "source": "anthropics/skills"
-        },
-        {
-          "name": "remotion-best-practices",
-          "nameCn": "Remotion视频制作",
-          "description": "使用 Remotion 创建视频动画",
-          "source": "Vercel Labs"
-        },
-        {
-          "name": "ai-image-generation",
-          "nameCn": "AI图像生成",
-          "description": "人工智能图像生成",
-          "source": "skills.sh"
-        },
-        {
-          "name": "algorithmic-art",
-          "nameCn": "算法艺术",
-          "description": "使用 p5.js 创建生成艺术",
-          "source": "travisvn"
-        }
-      ]
+      "skillCount": 30,
+      "subCategories": ["图像生成", "视频制作", "音频处理", "设计工具", "社交媒体内容"],
+      "useCases": ["UI/UX设计", "视频内容创作", "品牌视觉设计", "社交媒体图片制作", "演示文稿制作"]
     },
     {
       "id": "07-productivity",
       "name": "生产力工具",
       "nameEn": "Productivity & Organization",
       "description": "效率工具、时间管理、自动化",
-      "skillCount": 100,
-      "skills": [
-        {
-          "name": "file-organizer",
-          "nameCn": "文件整理器",
-          "description": "智能整理文件和文件夹",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "kaizen",
-          "nameCn": "持续改进",
-          "description": "应用持续改进方法论（精益管理）",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "tailored-resume-generator",
-          "nameCn": "定制简历生成器",
-          "description": "根据职位描述生成定制简历",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "n8n-skills",
-          "nameCn": "n8n工作流",
-          "description": "理解和操作 n8n 工作流",
-          "source": "ComposioHQ"
-        }
-      ]
+      "skillCount": 20,
+      "subCategories": ["文件管理", "个人效率", "简历与求职", "知识管理"],
+      "useCases": ["简历优化求职", "文件整理自动化", "知识网络构建", "持续改进实践"]
     },
     {
       "id": "08-collaboration",
       "name": "协作与项目管理",
       "nameEn": "Collaboration & Project Management",
       "description": "团队协作、项目管理、代码审查",
-      "skillCount": 70,
-      "skills": [
-        {
-          "name": "git-pushing",
-          "nameCn": "Git操作",
-          "description": "自动化 Git 操作和仓库交互",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "google-workspace-skills",
-          "nameCn": "Google Workspace集成",
-          "description": "Google Workspace 集成套件",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "code-review-excellence",
-          "nameCn": "代码审查",
-          "description": "卓越代码审查",
-          "source": "skills.sh"
-        }
-      ]
+      "skillCount": 20,
+      "subCategories": ["Git操作", "项目管理", "代码审查", "团队协作", "文档协作"],
+      "useCases": ["团队代码审查流程", "项目管理集成", "Git工作流优化", "开发完成验证"]
     },
     {
       "id": "09-security",
       "name": "安全与系统",
       "nameEn": "Security & Systems",
       "description": "安全审计、取证、系统管理",
-      "skillCount": 50,
-      "skills": [
-        {
-          "name": "computer-forensics",
-          "nameCn": "数字取证",
-          "description": "数字取证分析和调查技术",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "ffuf-web-fuzzing",
-          "nameCn": "Web模糊测试",
-          "description": "渗透测试中的 ffuf Web 模糊引导",
-          "source": "travisvn"
-        },
-        {
-          "name": "threat-hunting",
-          "nameCn": "威胁狩猎",
-          "description": "使用 Sigma 规则检测威胁",
-          "source": "ComposioHQ"
-        }
-      ]
+      "skillCount": 20,
+      "subCategories": ["安全审计", "渗透测试", "安全工具", "系统管理"],
+      "useCases": ["Web应用渗透测试", "代码安全审计", "威胁检测", "数字取证调查"]
     },
     {
       "id": "10-cloud-devops",
       "name": "云服务与DevOps",
       "nameEn": "Cloud & DevOps",
       "description": "AWS、Azure、GCP、CI/CD",
-      "skillCount": 150,
-      "skills": [
-        {
-          "name": "aws-skills",
-          "nameCn": "AWS技能",
-          "description": "AWS CDK 最佳实践、成本优化和无服务器架构模式",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "azure-ai",
-          "nameCn": "Azure AI",
-          "description": "Azure AI 服务",
-          "source": "Microsoft"
-        },
-        {
-          "name": "vercel-react-best-practices",
-          "nameCn": "Vercel React最佳实践",
-          "description": "Vercel React 开发最佳实践",
-          "source": "Vercel Labs"
-        },
-        {
-          "name": "docker-expert",
-          "nameCn": "Docker专家",
-          "description": "Docker 容器化专家",
-          "source": "skills.sh"
-        }
-      ]
+      "skillCount": 60,
+      "subCategories": ["AWS", "Azure", "GCP", "Vercel", "其他云服务", "DevOps", "监控"],
+      "useCases": ["云端Web应用部署", "Azure AI服务集成", "成本优化"]
     },
     {
       "id": "11-ai-ml",
       "name": "AI与机器学习",
       "nameEn": "AI & Machine Learning",
       "description": "LLM、Prompt Engineering、MCP",
-      "skillCount": 80,
-      "skills": [
-        {
-          "name": "prompt-engineering",
-          "nameCn": "提示工程",
-          "description": "教授提示工程技术和模式",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "mcp-builder",
-          "nameCn": "MCP服务器构建",
-          "description": "指导创建高质量的 MCP 服务器",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "browser-use",
-          "nameCn": "浏览器自动化",
-          "description": "AI 代理浏览器控制",
-          "source": "skills.sh"
-        },
-        {
-          "name": "loki-mode",
-          "nameCn": "多代理创业系统",
-          "description": "多代理自主创业系统（37个AI代理）",
-          "source": "travisvn"
-        }
-      ]
+      "skillCount": 40,
+      "subCategories": ["提示工程", "MCP", "LLM集成", "浏览器AI", "自动化代理", "AI开发工具", "视频与图像AI"],
+      "useCases": ["构建AI代理系统", "提示词优化", "多代理协作", "AI视频内容创作"]
     },
     {
       "id": "12-automation",
@@ -378,33 +108,28 @@
       "nameEn": "Automation & Workflows",
       "description": "工作流自动化、API 集成",
       "skillCount": 100,
-      "skills": [
-        {
-          "name": "connect",
-          "nameCn": "应用连接器",
-          "description": "连接 Claude 到任何应用（Gmail、Slack、GitHub 等 1000+ 服务）",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "skill-seekers",
-          "nameCn": "技能搜索器",
-          "description": "将文档网站自动转换为 Claude AI 技能",
-          "source": "ComposioHQ"
-        },
-        {
-          "name": "n8n-skills",
-          "nameCn": "n8n自动化",
-          "description": "n8n 工作流自动化",
-          "source": "ComposioHQ"
-        }
-      ]
+      "subCategories": ["自动化平台", "应用集成", "连接器", "自动化工具"],
+      "useCases": ["跨平台社交媒体管理", "CRM数据同步", "开发流程自动化", "电商订单处理", "自定义AI工作流"]
     }
+  ],
+  "hotSkills": [
+    {"name": "find-skills", "installs": "356.6K", "source": "vercel-labs/skills"},
+    {"name": "vercel-react-best-practices", "installs": "177.2K", "source": "vercel-labs/agent-skills"},
+    {"name": "web-design-guidelines", "installs": "136.0K", "source": "vercel-labs/agent-skills"},
+    {"name": "remotion-best-practices", "installs": "117.2K", "source": "remotion-dev/skills"},
+    {"name": "frontend-design", "installs": "108.9K", "source": "anthropics/skills"},
+    {"name": "azure-ai", "installs": "88.5K", "source": "microsoft/github-copilot-for-azure"},
+    {"name": "mcp-builder", "installs": "high", "source": "ComposioHQ"},
+    {"name": "pdf", "installs": "high", "source": "anthropics/skills"},
+    {"name": "docx", "installs": "high", "source": "anthropics/skills"},
+    {"name": "pptx", "installs": "high", "source": "anthropics/skills"}
   ],
   "sources": [
     {
       "name": "anthropics/skills",
       "type": "official",
-      "url": "https://github.com/anthropics/skills"
+      "url": "https://github.com/anthropics/skills",
+      "skillCount": 16
     },
     {
       "name": "ComposioHQ/awesome-claude-skills",
@@ -415,14 +140,24 @@
     {
       "name": "travisvn/awesome-claude-skills",
       "type": "community",
-      "stars": 21000,
+      "stars": 7900,
       "url": "https://github.com/travisvn/awesome-claude-skills"
     },
     {
       "name": "skills.sh",
       "type": "marketplace",
-      "skills": 79292,
+      "skills": 79144,
       "url": "https://skills.sh"
+    },
+    {
+      "name": "vercel-labs",
+      "type": "official",
+      "url": "https://github.com/vercel-labs"
+    },
+    {
+      "name": "microsoft",
+      "type": "official",
+      "url": "https://github.com/microsoft"
     }
   ]
 }

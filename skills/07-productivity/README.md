@@ -4,72 +4,74 @@
 
 ## 技能列表
 
-### 文件管理
+### 10.1 文件管理
 
-| 技能名称 | 描述 | 来源 |
-|----------|------|------|
-| File Organizer | 智能整理文件和文件夹 | ComposioHQ |
-| Invoice Organizer | 自动整理发票和收据用于税务准备 | ComposioHQ |
-| file-deletion | 安全文件删除和数据擦除方法 | ComposioHQ |
-| planning-with-files | 基于文件的规划 | skills.sh |
+| 技能名称 | 描述 | 来源 | 热度 |
+|----------|------|------|------|
+| File Organizer | 智能整理文件和文件夹 | ComposioHQ | ⭐⭐⭐⭐ |
+| Invoice Organizer | 自动整理发票和收据用于税务准备 | ComposioHQ | ⭐⭐⭐⭐ |
+| file-deletion | 安全文件删除和数据擦除方法 | ComposioHQ | ⭐⭐⭐⭐ |
+| planning-with-files | 基于文件的规划 | skills.sh | ⭐⭐⭐ |
 
-### 个人效率
+### 10.2 个人效率
 
-| 技能名称 | 描述 | 来源 |
-|----------|------|------|
-| kaizen | 应用持续改进方法论（精益管理） | ComposioHQ |
-| ship-learn-next | 基于反馈循环帮助迭代下一个构建或学习内容 | ComposioHQ |
-| Raffle Winner Picker | 从列表中随机选择获奖者（加密安全） | ComposioHQ |
-| n8n-skills | 理解和操作 n8n 工作流 | ComposioHQ |
-| tapestry | 将相关文档互连成知识网络 | ComposioHQ |
+| 技能名称 | 描述 | 来源 | 热度 |
+|----------|------|------|------|
+| kaizen | 应用持续改进方法论（精益管理） | ComposioHQ | ⭐⭐⭐⭐ |
+| ship-learn-next | 基于反馈循环帮助迭代下一个构建或学习内容 | ComposioHQ | ⭐⭐⭐⭐ |
+| Raffle Winner Picker | 从列表中随机选择获奖者（加密安全） | ComposioHQ | ⭐⭐⭐⭐ |
+| n8n-skills | 理解和操作 n8n 工作流 | ComposioHQ | ⭐⭐⭐⭐ |
+| tapestry | 将相关文档互连成知识网络 | ComposioHQ | ⭐⭐⭐⭐ |
+| nblm | 下一代学习机器 | skills.sh | ⭐⭐⭐ |
+| humanizer-zh | 简历人性化（中文） | skills.sh | ⭐⭐⭐ |
 
-### 简历与求职
+### 10.3 简历与求职
 
-| 技能名称 | 描述 | 来源 |
-|----------|------|------|
-| Tailored Resume Generator | 根据职位描述生成定制简历 | ComposioHQ |
-| resume-builder | 简历构建器 | 社区 |
-| humanizer-zh | 简历人性化（中文） | skills.sh |
+| 技能名称 | 描述 | 来源 | 热度 |
+|----------|------|------|------|
+| Tailored Resume Generator | 根据职位描述生成定制简历 | ComposioHQ | ⭐⭐⭐⭐⭐ |
+| resume-builder | 简历构建器 | 社区 | ⭐⭐⭐⭐ |
 
-### 知识管理
+### 10.4 知识管理
 
-| 技能名称 | 描述 | 来源 |
-|----------|------|------|
-| tapestry | 知识网络构建 | ComposioHQ |
-| knowledge-management | 知识管理 | 社区 |
-| remembering-conversations | 记住对话内容 | skills.sh |
-
-### 自动化平台
-
-| 技能名称 | 描述 | 来源 |
-|----------|------|------|
-| n8n-skills | n8n 工作流自动化 | ComposioHQ |
-| make-integration | Make (Integromat) 集成 | ComposioHQ |
-| agentation | 代理自动化 | skills.sh |
+| 技能名称 | 描述 | 来源 | 热度 |
+|----------|------|------|------|
+| tapestry | 知识网络构建 | ComposioHQ | ⭐⭐⭐⭐ |
+| knowledge-management | 知识管理 | 社区 | ⭐⭐⭐ |
+| remembering-conversations | 记住对话内容 | skills.sh | ⭐⭐⭐⭐ |
 
 ---
 
-## 使用场景
+## 使用场景 (Use Cases)
 
-### 1. 文件整理
-- 智能文件分类
-- 发票和收据管理
-- 批量文件重命名
+### 场景 1: 简历优化求职
+- **描述**: 根据职位描述优化简历，提高面试机会
+- **适用技能**: Tailored Resume Generator, humanizer-zh
+- **使用步骤**:
+  1. 提供目标职位描述
+  2. 使用 Tailored Resume Generator 生成定制简历
+  3. 使用 humanizer-zh 优化中文表达
 
-### 2. 个人成长
-- 持续改进实践
-- 学习和迭代规划
-- 目标追踪
+### 场景 2: 文件整理自动化
+- **描述**: 自动整理混乱的文件系统
+- **适用技能**: File Organizer, Invoice Organizer
+- **使用步骤**:
+  1. 使用 File Organizer 整理普通文件
+  2. 使用 Invoice Organizer 整理财务文档
 
-### 3. 求职招聘
-- 简历定制化
-- 职位匹配分析
-- 面试准备
+### 场景 3: 知识网络构建
+- **描述**: 将分散的文档整合为知识网络
+- **适用技能**: tapestry, knowledge-management
+- **使用步骤**:
+  1. 使用 tapestry 互联文档
+  2. 使用 knowledge-management 管理知识
 
-### 4. 知识管理
-- 文档互联
-- 知识图谱构建
-- 信息整合
+### 场景 4: 持续改进实践
+- **描述**: 应用精益管理方法提升效率
+- **适用技能**: kaizen, ship-learn-next
+- **使用步骤**:
+  1. 使用 kaizen 建立改进流程
+  2. 使用 ship-learn-next 迭代学习和构建
 
 ---
 
@@ -79,6 +81,7 @@
 /plugin marketplace add file-organizer
 /plugin marketplace add kaizen
 /plugin marketplace add tailored-resume
+/plugin marketplace add tapestry
 ```
 
 ## 相关资源
